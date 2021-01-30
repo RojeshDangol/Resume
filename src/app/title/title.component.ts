@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit {
 
-  name = [ {first: 'Rojesh' }, {last: 'Dangol'}];
+  name = {first: 'Rojesh', last: 'Dangol'};
 
-  address = [ {street: '816 Perry Hwy, Apt 24'},
-              {city: 'Pittsburgh'},
-              {state: 'PA'},
-              {zip: '15229'} ];
+  address = {street: '816 Perry Hwy',
+              apt: 'Apt 24',
+              city: 'Pittsburgh',
+              state: 'PA',
+              zip: '15229'};
+  
+  contact = {email: 'rozsx1@gmail.com',
+              phone: '4126893520',
+              link: 'www.linkedin.com/in/rojesh-dangol'};
+
+
             
               
 
