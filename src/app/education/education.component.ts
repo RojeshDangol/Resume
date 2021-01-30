@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  year = [ {start: 'Aug 2015'}, {end: 'May 2020'}];
+  year = {start: 'Aug 2015',
+          end: 'May 2020'};
 
   degree = ['Computer Science Information Technology'];
 

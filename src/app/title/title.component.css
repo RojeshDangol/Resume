@@ -1,0 +1,13 @@
+.name {
+    color: blue;
+}
+
+:host {
+    text-align: center;
+}
+
+.title {
+    size: 2px;
+    line-height: 0;
+
+}
