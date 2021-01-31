@@ -4,15 +4,15 @@ import { Injectable } from '@angular/core'
 
 export class DataService {
 
-    data= [{name: { first: 'Rojesh', last: 'Dangol' },
+dataArray= [{name: { first: 'Rojesh', last: 'Dangol' },
 
-    address: {
-        street: '816 Perry Hwy',
-        apt: 'Apt 24',
-        city: 'Pittsburgh',
-        state: 'PA',
-        zip: '15229'
-    },
+            address: {
+                        street: '816 Perry Hwy',
+                        apt: 'Apt 24',
+                        city: 'Pittsburgh',
+                        state: 'PA',
+                        zip: '15229'
+                    },
 
     contact: {
         email: 'rozsx1@gmail.com',
@@ -38,11 +38,8 @@ export class DataService {
                         start: 'Aug 2015',
                         end: 'May 2020'
                         },
-
         degree: 'Computer Science Information Technology',
-
         college: 'Slippery Rock University',
-
         address: 'Slippery Rock, PA'
     },
 
@@ -66,18 +63,18 @@ export class DataService {
     }]
 
     get(){
-        return this.data;
+        return this.dataArray;
     }
 
     add(newData: any){
-        this.data.push(newData);
+        this.dataArray.push(newData);
 
     }
 
     delete(newData: any){
-        const index = this.data.indexOf(newData);
+        const index = this.dataArray.indexOf(newData);
         if (index >= 0){
-            this.data.splice(index, 1);
+            this.dataArray.splice(index, 1);
         }
     }
 
