@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+
 
 @Component({
   selector: 'app-title',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit {
 
-  name = {first: 'Rojesh', last: 'Dangol'};
+  data:any;
+
+
+  //name = {first: 'Rojesh', last: 'Dangol'};
 
   address = {street: '816 Perry Hwy',
               apt: 'Apt 24',
@@ -20,14 +25,10 @@ export class TitleComponent implements OnInit {
               link: 'www.linkedin.com/in/rojesh-dangol'};
 
 
-            
-              
-
-
-
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.data = this.dataService.get();
   }
 
 }

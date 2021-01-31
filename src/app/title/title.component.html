@@ -1,9 +1,11 @@
 
-<h1 class="name">{{ name.first }} {{name.last}}</h1>
+<!-- <h1 class="name">{{ name.first }} {{name.last}}</h1> -->
+
+<h1>{{ data[0].name.first }} {{ data[0].name.last }}</h1>
 
 <div class= "title">
-    <p >{{address.street}}, {{address.apt}}, {{address.city}}, {{address.state}}, {{address.zip}}</p>
-    <p >Email: {{contact.email}}</p>
+    <p >{{data[0].address.street}}, {{address.apt}}, {{address.city}}, {{address.state}}, {{address.zip}}</p>
+    <p >Email: {{data[0].contact.email}}</p>
     <p >Phone no.: {{contact.phone}}</p>
     <p >LinkedIn Profile: <a>{{contact.link}}</a></p>
 </div>
