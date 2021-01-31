@@ -8,6 +8,7 @@ import { DescriptionComponent } from './description/description.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { DataComponent } from './data/data.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ExperienceComponent } from './experience/experience.component';
     DescriptionComponent,
     SkillsComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
