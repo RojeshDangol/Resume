@@ -1,0 +1,23 @@
+<form [formGroup]="form"
+        (ngSubmit)="OnSubmit(form.value)">  
+
+    <label class="name" >First Name</label>
+        <input type="text" formControlName="firstName">
+    <label class="name">Last Name</label>
+        <input type="text" formControlName="lastName">
+   
+    <label class="address">Street</label>
+        <input type="text" formControlName="street">
+    <label class="address" >Apt</label>
+        <input type="number" formControlName="apt">
+    <label class="address">City</label>
+        <input type="text" formControlName="city">
+    <label class="address">State</label>
+        <input type="text" formControlName="state">
+    <label class="address">zip</label>
+        <input type="number" formControlName="zip">
+    
+    <button type="submit" [disabled]="!form.valid">Save</button>
+    
+</form>
+
